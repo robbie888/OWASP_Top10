@@ -12,7 +12,7 @@ This course was a great over view of the OWASP Top 10 and Burp Suite.
 
 Here I will list the links to my write-ups for each section, dividing them into sections as per the training material.
 
-- [SQL Injection](SQL%20;Injection%20;Labs.md)
+- [SQL Injection](SQL%20Injection%20Labs.md)
 
 The rest are coming soon!
 

@@ -16,7 +16,7 @@ In my lab I setup Juice Shop on an Ubuntu server, using the Docker installation 
 
 Here I will list the links to my write-ups for each challenge, dividing them into the difficulty level as defined on the Juice Shop score board.
 
-- [Level 1](Level%20;1%20;Challenges.md)
+- [Level 1](Level%201%20Challenges.md)
 
 The rest are coming soon!
 
