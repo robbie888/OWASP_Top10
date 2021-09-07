@@ -369,7 +369,7 @@ Now with this I can amend the condition to check for the administrator’s passw
 
 I’ll use ZAP again just because the fuzzer is quicker that the community burp.
 
-Now I havea query that is working with the username/password lookup.
+Now I have a query that is working with the username/password lookup.
 
 ![](images/f8dba03a89184395a6b3ee4b3512d952.png)
 
@@ -398,3 +398,78 @@ Now to login.
 ![](images/dd472404a2414039905a6e3c2432afaa.png)
 
 Lab done.
+
+## Lab 13: SQL Blind Injection Time delay
+
+**Description:**
+
+This lab contains a blind SQL injection vulnerability. The application uses a tracking cookie for analytics, and performs an SQL query containing the value of the submitted cookie.
+
+The results of the SQL query are not returned, and the application does not respond any differently based on whether the query returns any rows or causes an error. However, since the query is executed synchronously, it is possible to trigger conditional time delays to infer information.
+
+To solve the lab, exploit the SQL injection vulnerability to cause a 10 second delay.
+
+**Notes:**
+
+As with the previous lab, we will attack the tracking cookie field.
+
+![7e64d55137ccd1676297b01eda663ce6.png](images/d9b8b85087a64605b621c8e82cde8750.png)
+
+I'll write a few SQL injection attempts for different DB types and try the all.
+
+After trying a few payloads, this one did the trick and provided me with a 10 second delay before opening the site.
+
+`'||(SELECT pg_sleep(10))||'`
+
+This means it is a postgres DB.
+
+![4e171abdcec025a50f0e0a5442f94ff6.png](images/46c1bc96d0a94a1595f86686f30accd3.png)
+
+## Lab 14: Blind SQL injection with time delays and information retrieval
+
+**Description:**
+
+This lab contains a blind SQL injection vulnerability. The application uses a tracking cookie for analytics, and performs an SQL query containing the value of the submitted cookie.
+
+The results of the SQL query are not returned, and the application does not respond any differently based on whether the query returns any rows or causes an error. However, since the query is executed synchronously, it is possible to trigger conditional time delays to infer information.
+
+The database contains a different table called users, with columns called username and password. You need to exploit the blind SQL injection vulnerability to find out the password of the administrator user.
+
+To solve the lab, log in as the administrator user.
+
+**Notes:**
+First, using the repeater in Burp, I'll try a few payloads to achieve a time delay and confirm what type of DB is running.
+
+I'll go for Postgres first, since that was the DB in the last Lab.
+
+Success, I had a 10 second delay with the following payload.
+
+`'||(SELECT pg_sleep(10))||'`
+
+Now I'll get a payload with a condition in it. Using the sleep function if true.
+
+![284c755dbe4d4754a75c4d78655ab92e.png](images/71abae397aa447f5b65dda6138ee887c.png)
+
+This condition worked.
+
+Now to try and brute force the password. I'll switch over to ZAP for this one as it will be faster.
+
+I'll try and get a working payload by testing if the first letter in the password is smaller than 'z'.
+
+![022901eee1616e268c22e9162ce0ab91.png](images/f37d0dc39fef4ad9b1f0168b6c0d20f5.png) 
+
+Now I have a payload to test the administrator's password, so will load this into the fuzzer like previous attacks and look for responses that have been delayed.
+
+Here is the payload:
+
+`'||(SELECT CASE WHEN (SUBSTR((SELECT password FROM users WHERE username = 'administrator'), 1, 1) = 'a') THEN (SELECT pg_sleep(10)) END)||'`
+
+And here we have it, the password in my payload results. I sorted the results by response time, but will now export it to excel and sort by payload to make it easier to write the password down.
+
+![6b9ef79dfce50923b4330afca4ca272a.png](images/2b291eb8e08b4c66ac7e9df0babefb3a.png)
+
+And that is the lab done.
+
+![image](images/31909f62991c4ef5a9d75996a9475bd6.png)
+
+I'll have to stop here, the next two SQL Injection labs require Burp Pro.
