@@ -6,11 +6,11 @@ The challenges below are listed in alphabetical order, not necessarily the order
 
 ## Bonus Payload
 
-### **Description**
+### Description
 
 Use the bonus payload `<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/771984076&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>` in the DOM XSS challenge.
 
-### **Exploitation**
+### Exploitation
 
 Having already completed the DOM injection below, this was quite straight forward. The search bar in the web-site is vulnerable.
 
@@ -30,7 +30,7 @@ Receive a coupon code from the support chatbot.
 
 ### Exploitation
 
-This was quite an easy challenge, I just complained to the chatbot a few times saying I wanted a refund or was unhappy with my order and got a coupon! It seams that the squeaky wheel gets the oil in this case.
+This was quite an easy challenge, I just complained to the chatbot a few times saying I wanted a refund or was unhappy with my order and got a coupon! It seems that the squeaky wheel gets the oil in this case.
 
 ![75e54aa89f5898b424f839425997a35c.png](images/3ecf3c53b0864b5c8c80379c11d25de6.png)
 
@@ -84,10 +84,11 @@ Provoke an error that is neither very gracefully nor consistently handled.
 
 Here I was looking for a server side error, so my first thought is SQL injection.
 
-So I tried putting in a single quote in several fields starting with the search field which didn't provide any errors.
+So I tried putting in a single quote in several fields starting, with the search field which didn't provide any errors.
 
 However the login page seemed susceptible, putting a single quote in the username field generated this error:
- ![b7b3472b05b4db128fcee7b599cf7995.png](images/b0eee97cfc6742e1b68387cf62621deb.png)
+
+![b7b3472b05b4db128fcee7b599cf7995.png](images/b0eee97cfc6742e1b68387cf62621deb.png)
 
 This solved the challenged.
 
@@ -170,6 +171,8 @@ This wasn't really an exploit, just ensuring that we are manually clicking aroun
 To get to this I created an account and logged in.
 
 ![6d0871a02284ef07131eb143544ae295.png](images/9ca5581e66d74bf291b0ccbb6742829a.png)
+
+Clicking on the Privacy Policy solved this challenge.
 
 ## Repetitive Registration
 
