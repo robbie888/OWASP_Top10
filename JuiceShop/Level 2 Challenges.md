@@ -106,7 +106,7 @@ Googling MC SafeSearch comes up with an interesting music video about passwords 
 
 After trying a few different variations of the password to login we end up with `Mr. N00dles` as the login.
 
-No we're logged in as MC SafeSearch!
+Now we're logged in as MC SafeSearch!
 
 ## Meta Geo Stalking
 
