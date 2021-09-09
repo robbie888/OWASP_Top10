@@ -10,7 +10,7 @@ The courses I will take and my write-ups are listed below.
 
 The link to this course is [here](https://www.youtube.com/watch?v=24fHLWXGS-M&ab_channel=TheCyberMentor)
 
-My notes and **write-ups** are in this repo here: [JuiceShop](JuiceShop/)
+My notes and **write-ups** are in this repo here: [JuiceShop write-ups](JuiceShop/)
 
 ## Try Hack Me - Web Fundamentals Path
 
@@ -28,4 +28,4 @@ My notes and **write-ups** are in this repo here: (coming soon)
 
 The link to this course is [here](https://portswigger.net/web-security)
 
-My notes and **write-ups** are in this repo here: [Portswigger](Portswigger/)
+My notes and **write-ups** are in this repo here: [Portswigger write-ups](Portswigger/)
