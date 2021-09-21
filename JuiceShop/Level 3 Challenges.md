@@ -226,7 +226,7 @@ That did it!
 
 Challenges solved.
 
-## CRSF
+## CSRF
 
 ### Description:
 
