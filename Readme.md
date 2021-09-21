@@ -8,24 +8,24 @@ The courses I will take and my write-ups are listed below.
 
 ## Beginner Web Application Hacking (Juice Shop & Burp Suite)
 
-The link to this course is [here](https://www.youtube.com/watch?v=24fHLWXGS-M&ab_channel=TheCyberMentor)
+My **write-ups** are here: [JuiceShop write-ups](JuiceShop/)
 
-My notes and **write-ups** are in this repo here: [JuiceShop write-ups](JuiceShop/)
+The course link is [here](https://www.youtube.com/watch?v=24fHLWXGS-M&ab_channel=TheCyberMentor)
 
 ## Try Hack Me - Web Fundamentals Path
 
-The link to this course is [here](https://tryhackme.com/path/outline/web)
+My **write-ups** are here: [TryHackMe Web Fundamentals - write-ups](TryHackMe/)
 
-My notes and **write-ups** are in this repo here: [TryHackMe Web Fundamentals - write-ups](TryHackMe/)
+The course link is [here](https://tryhackme.com/path/outline/web)
 
 ## Kontra OWASP Top 10 for Web
 
-The link to this course is [here](https://application.security/free/owasp-top-10/)
+My **write-ups** are here: (coming soon)
 
-My notes and **write-ups** are in this repo here: (coming soon)
+The course link is [here](https://application.security/free/owasp-top-10/)
 
 ## Portswigger Web Academy Labs
 
-The link to this course is [here](https://portswigger.net/web-security)
+My **write-ups** are here: [Portswigger write-ups](Portswigger/)
 
-My notes and **write-ups** are in this repo here: [Portswigger write-ups](Portswigger/)
+The course link is [here](https://portswigger.net/web-security)
