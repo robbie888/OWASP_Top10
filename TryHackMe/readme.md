@@ -26,8 +26,6 @@ This section provided several practical activities using Burp and OWASP ZAP.
 
 This section discusses several vulnerabilities along with practicals on exploiting them.
 
-I've listed the rooms in the order they're presented.
-
 - [LFI Room](LFI%20Room.md)
 
 ## Practice Makes Perfect

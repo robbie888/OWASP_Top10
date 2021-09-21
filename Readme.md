@@ -16,7 +16,7 @@ My notes and **write-ups** are in this repo here: [JuiceShop write-ups](JuiceSho
 
 The link to this course is [here](https://tryhackme.com/path/outline/web)
 
-My notes and **write-ups** are in this repo here: (coming soon)
+My notes and **write-ups** are in this repo here: [TryHackMe Web Fundamentals - write-ups](TryHackMe/)
 
 ## Kontra OWASP Top 10 for Web
 
