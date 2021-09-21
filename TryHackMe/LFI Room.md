@@ -1,6 +1,4 @@
-LFI Inclusioon Room
-
-# LFI Inclusion Room
+# LFI Room
 
 This is a simple room, designed to exploit LFI on a web server.
 
@@ -30,7 +28,7 @@ Here is the user flag
 
 ![054959b203dfadcabfa55e098aa98a61.png](images/2d518dc097304830bd3189aeff982660.png)
 
-Now for privilege escalation, socat might be intresting
+Now for privilege escalation, socat might be interesting
 
 ![9e23aa29b0eec8d7da529434f1cc0d00.png](images/763ab4b0edaf45b3b785521bf218be0e.png)
 
