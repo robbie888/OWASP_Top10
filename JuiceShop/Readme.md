@@ -18,8 +18,13 @@ Here I will list the links to my write-ups for each challenge, dividing them int
 
 - [Level 1 - Write-ups](Level%201%20Challenges.md)
 - [Level 2 - Write-ups](Level%202%20Challenges.md)
+- [Level 3 - Write-ups](Level%203%20Challenges.md)
+- [Level 4 - Write-ups](Level%204%20Challenges.md)
 
-The rest are coming soon!
+
+That's it for this training course! 
+
+The JuiceShop does have more challenges that the course does not cover, the course Author was explaining that the remaining challenges are not necessarily realistic - more like puzzles etc. But I plan to return to them after completing the other OWASP Top 10 training courses I'm covering in this repo.
 
 ## Tools
 

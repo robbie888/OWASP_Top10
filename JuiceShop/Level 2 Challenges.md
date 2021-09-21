@@ -1,5 +1,3 @@
-Level 2 Challenges
-
 # Level 2 Challenges
 
 The challenges below are listed in alphabetical order, not necessarily the order they were completed.

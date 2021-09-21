@@ -1,5 +1,3 @@
-Level 1 Challenges
-
 # Level 1 Challenges
 
 The challenges below are listed in alphabetical order, not necessarily the order they were completed.
