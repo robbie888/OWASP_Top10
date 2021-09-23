@@ -27,6 +27,9 @@ This section provided several practical activities using Burp and OWASP ZAP.
 This section discusses several vulnerabilities along with practicals on exploiting them.
 
 - [LFI Room](LFI%20Room.md)
+- [Authenticate Room](Authenticate%20Room.md)
+- [XXE Room](XXE%20Room.md)
+- [Cross-site Scripting Room](Cross-site%20Scripting%20Room.md)
 
 ## Practice Makes Perfect
 This section includes more practical components including two CTF exercises. These rooms bring together what was learnt in the previous sections.
