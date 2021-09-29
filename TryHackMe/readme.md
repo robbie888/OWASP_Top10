@@ -30,6 +30,7 @@ This section discusses several vulnerabilities along with practicals on exploiti
 - [Authenticate Room](Authenticate%20Room.md)
 - [XXE Room](XXE%20Room.md)
 - [Cross-site Scripting Room](Cross-site%20Scripting%20Room.md)
+- [ZTH: Obscure Web Vulns Room](ZTH%20Obscure%20Web%20Vulns.md)
 
 ## Practice Makes Perfect
 This section includes more practical components including two CTF exercises. These rooms bring together what was learnt in the previous sections.
