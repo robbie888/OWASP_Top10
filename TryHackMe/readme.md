@@ -32,7 +32,7 @@ This section discusses several vulnerabilities along with practicals on exploiti
 - [Cross-site Scripting Room](Cross-site%20Scripting%20Room.md)
 - [ZTH: Obscure Web Vulns Room](ZTH%20Obscure%20Web%20Vulns.md)
 - [SSRF Room](SSRF%20Room.md)
-- [ZTH: Web2](ZTH_Web2.md)
+- [ZTH: Web2](ZTH%20Web2.md)
 - [Upload Vulnerabilities](Upload%20Vulnerabilities.md)
 
 ## Practice Makes Perfect
