@@ -20,7 +20,7 @@ The course link is [here](https://tryhackme.com/path/outline/web)
 
 ## Kontra OWASP Top 10 for Web
 
-My **write-ups** are here: (coming soon)
+My **write-ups** are here: [Kontra OWASP TOP 10 - write-ups](Kontra/)
 
 The course link is [here](https://application.security/free/owasp-top-10/)
 
