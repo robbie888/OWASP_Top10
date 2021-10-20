@@ -38,5 +38,43 @@ As a result the attacker was able to harvest sensitive information such as acces
 
 In this lesson Kontra discusses how SQL can be injected into vulnerable code. The example uses a mailing list unsubscribe link to gather database information and extract other private information, such as email addresses. The SQL code was injected using a web proxy to capture web requests and editing the JSON component in the request, adding in the relevant sql code alongside the email address being submitted.
 
+## Command Injection
+
+This lesson discusses command injection using a site called PayHub. The lesson then shows the code of the website, and how it runs an another application (curl) via an OS command to processes a user entered field. The code appends the user entered fields as a string concatenation and does not sanitise the user field. The using an injection payload of `;xxx` we receive and error that the command xxx was not found. Thus showing us we could inject a command here, achieving RCE.
+
+From here we enter another injection to view the /etc/passwd file on the server, which is `;cat /etc/passwd`
+
+The server then responds with the list of user's on the server.
+
+## XML Injection
+
+This example uses a site called PeakFitness to demonstrate XML Injection. The site has an upload portal which allows user's to upload GPX formatted files. The portal accepts XML formatted GPX files. The demonstration shows that we can modify the GPX file, adding in an Element and Entity to load a system file.
+
+Here is the sample code:
+
+```
+<!DOCTYPE loadthis [<!ELEMENT loadthis ANY >
+<!ENTITY somefile SYSTEM "file:///etc/passwd" >]>
+<?xml version="1.0" encoding="UTF-8"?>
+```
+
+Then further in the file we add
+`<loadthis>&somefile;</loadthis>`
+
+Which should display the file we requested.
+
+Upon uploading the modified GPX file, we receive output on the web page with the file contents of /etc/passwd.
+
+## Directory Traversal
+
+This lesson discusses a site called DealHub, and shows how we can access folders on the server that we shouldn't be able to using directory traversal. On the target site we look at an image being loaded. In the site code way can see a file name and folder being referenced in an URL request that requests the image with GET parameters calling the file name. e.g. `HTTP://site/webpage.jsp?foldername=folder&filename=image.jpg`
+
+From here we can change the file name parameter to `../../../../etc/passwd`
+
+Then instead of getting an image, we can the output of the passwd file!
+
+## Weak Randomness
+
+This lesson discusses a site called CloudZone which offers cloud servers. Here we initiate a password reset through the 'forgotten password' section of the site. We re-submit the request several times and determine the numeric difference in the token values. Inspecting the code for this section of the web application we are shown that the token uses a timestamp rather than a random token. Thus we could predict other tokens and potentially reset the passwords for other user accounts.
 
 More coming soon!
