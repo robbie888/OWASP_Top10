@@ -42,7 +42,7 @@ Note: Some of these write-up links will take you to my TryHackMe GitHub repo.
 
 - [Avengers Blog](Avengers%20Blog.md)
 - [ToolsRus](ToolsRus.md)
-- [Pickle Rick](https://github.com/robbie888/TryHackMe/blob/main/Pickle%20Rick%20Room.md)
-- [OWASP JuiceShop](https://github.com/robbie888/OWASP_Top10/tree/master/JuiceShop) 
+- [Pickle Rick](https://github.com/robbie888/TryHackMe/blob/main/writeups/Pickle%20Rick%20Room.md)
+- [OWASP JuiceShop](https://github.com/robbie888/OWASP_Top10/tree/master/writeups/JuiceShop) 
 
 That's all for this path! I was very please to receive the certificate on completion of this today (5th Oct 2021)
